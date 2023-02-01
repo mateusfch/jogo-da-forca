@@ -81,7 +81,7 @@ function letraEscolhida(palpite) {
   if (tabua.join("") == palavra.toUpperCase()) {
     setTimeout(function () {
       window.location.href = "page_vitoria.html";
-    }, 650);
+    }, 800);
     // window.location.href = "page_vitoria.html";
   }
   if (acerto == false) {
@@ -112,7 +112,7 @@ function letraEscolhida(palpite) {
         // desenho.innerHTML = "<img class='img-fluid'src='forca.png'>";
         setTimeout(function () {
           window.location.href = "page_derrota.html";
-        }, 650);
+        }, 800);
 
         // window.location.href = "page_derrota.html";
 
