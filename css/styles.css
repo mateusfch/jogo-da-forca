@@ -1,0 +1,170 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1f1d1d;
+  /* background-image: linear-gradient(90deg, rgb(0, 0, 0), #272727); */
+}
+img {
+  width: 30rem;
+}
+
+div#tabuleiro {
+  color: white;
+  opacity: 60%;
+  font-size: 4rem;
+}
+
+.container#grupo-imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#letras {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to left, black, #4a4ac7);
+  font-size: 1.6rem;
+  width: 5rem;
+  text-align: center;
+  color: white;
+  opacity: 78%;
+}
+
+.container#grupoletras {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+header.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  /* background-image: linear-gradient(to left, black, #4a4ac7); */
+  border-radius: 0.2rem;
+}
+
+h1#titulo {
+  color: white;
+  opacity: 75%;
+  background-color: #4a4ac7;
+  /* background-image: linear-gradient(to left, black, #4a4ac7); */
+}
+
+h2#titulo-vitoria {
+  color: white;
+  opacity: 75%;
+}
+
+#descricao-vitoria {
+  color: white;
+  opacity: 75%;
+}
+
+.bi-emoji-sunglasses,
+.bi-emoji-frown {
+  font-size: 15em;
+}
+.bi-hand-thumbs-up,
+.bi-hand-thumbs-down {
+  font-size: 10rem;
+}
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #161616;
+  opacity: 78%;
+}
+
+.botoes-continuar {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#secao-vitoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fundo-page-vitoria {
+  background-color: #4a4ac7;
+}
+
+#emojis-vitoria {
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+h4 {
+  color: #4a4ac7;
+}
+
+/* X small devices*/
+@media (max-width: 575.98px) {
+  .btn-primary {
+    background-image: linear-gradient(to left, black, #4a4ac7);
+    font-size: 1rem;
+    width: 2.5rem;
+    text-align: center;
+    color: white;
+    opacity: 78%;
+  }
+  .bi-emoji-sunglasses,
+  .bi-emoji-frown {
+    font-size: 13rem;
+  }
+  .bi-hand-thumbs-up,
+  .bi-hand-thumbs-down {
+    font-size: 9rem;
+  }
+  #secao-vitoria {
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bi-emoji-sunglasses,
+  .bi-emoji-frown {
+    font-size: 20em;
+  }
+  .bi-hand-thumbs-up,
+  .bi-hand-thumbs-down {
+    font-size: 14rem;
+  }
+}
