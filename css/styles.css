@@ -9,6 +9,7 @@ body {
 }
 img {
   width: 30rem;
+  transition: opacity 0.5s;
 }
 
 div#tabuleiro {

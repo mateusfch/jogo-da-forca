@@ -1,3 +1,11 @@
+var imagens = [
+  "img/cabeca.png",
+  "img/tronco.png",
+  "img/bracoesquerdo.png",
+  "img/bracodireito.png",
+  "img/pernaesquerda.png",
+  "img/pernadireita.png",
+];
 var erros = 0;
 var palavras = [
   "gato",
@@ -85,38 +93,30 @@ function letraEscolhida(palpite) {
     // window.location.href = "page_vitoria.html";
   }
   if (acerto == false) {
-    var desenho = document.getElementById("desenho");
     erros = erros + 1;
     switch (erros) {
       case 1:
-        desenho.innerHTML = "<img class='img-fluid'src='img/cabeca.png'>";
+        document.getElementById("figura").src = imagens[0];
         break;
       case 2:
-        desenho.innerHTML = "<img class='img-fluid'src='img/tronco.png'>";
+        document.getElementById("figura").src = imagens[1];
         break;
       case 3:
-        desenho.innerHTML =
-          "<img class='img-fluid'src='img/bracoesquerdo.png'>";
+        document.getElementById("figura").src = imagens[2];
         break;
       case 4:
-        desenho.innerHTML = "<img class='img-fluid'src='img/bracodireito.png'>";
+        document.getElementById("figura").src = imagens[3];
+
         break;
       case 5:
-        desenho.innerHTML =
-          "<img class='img-fluid'src='img/pernaesquerda.png'>";
+        document.getElementById("figura").src = imagens[4];
         break;
       case 6:
-        desenho.innerHTML = "<img class='img-fluid'src='img/pernadireita.png'>";
+        document.getElementById("figura").src = imagens[5];
         erros = 0;
-        // window.alert("vc perdeu :(");
-        // desenho.innerHTML = "<img class='img-fluid'src='forca.png'>";
         setTimeout(function () {
           window.location.href = "page_derrota.html";
         }, 800);
-
-        // window.location.href = "page_derrota.html";
-
-        // document.location.reload(true);
 
         break;
     }
